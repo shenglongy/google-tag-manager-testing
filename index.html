@@ -26,9 +26,15 @@
 
 
   <button onclick="handleClick()">click</button>
+  
+  <button onclick="handleClick2()">click2</button>
   <script>
     const handleClick = () => {
       otag("event", "staticpageview")
+    }
+
+    const handleClick2 = () => {
+      dataLayer.push({ 'event': 'otagevent', 'otagvalue': 'register' })
     }
   </script>
 </body>
