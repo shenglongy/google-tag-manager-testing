@@ -28,7 +28,8 @@
   <button onclick="handleClick()">click</button>
   <script>
     const handleClick = () => {
-      otag("event", "staticpageview")
+      dataLayer.push({ 'event': 'otagevent', 'otagvalue': 'purchase' });
+
     }
   </script>
 </body>
