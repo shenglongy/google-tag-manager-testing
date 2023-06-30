@@ -21,6 +21,7 @@
 
   <button onclick="handleCick()">login</button>
   <button onclick="handleClickRegister()">register</button>
+  <button onclick="handleClickPlacebet()">placebet</button>
   <!-- Google Tag Manager (noscript) -->
   <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PK4TM54" height="0" width="0"
       style="display:none;visibility:hidden"></iframe></noscript>
@@ -33,6 +34,10 @@
 
     const handleClickRegister = () => {
       dataLayer.push({"event": "register"});
+    }
+
+    const handleClickPlacebet = () => {
+      dataLayer.push({"event": "placebet"})
     }
   </script>
 </body>
