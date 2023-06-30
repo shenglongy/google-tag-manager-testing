@@ -19,7 +19,8 @@
 <body>
   <div>Goole Tag Manager test page</div>
 
-  <button onclick="handleCick()">click</button>
+  <button onclick="handleCick()">login</button>
+  <button onclick="handleClickRegister()">register</button>
   <!-- Google Tag Manager (noscript) -->
   <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PK4TM54" height="0" width="0"
       style="display:none;visibility:hidden"></iframe></noscript>
@@ -28,6 +29,10 @@
   <script>
     const handleCick = () => {
       dataLayer.push({ "event": "login" });
+    }
+
+    const handleClickRegister = () => {
+      dataLayer.push({"event": "register"});
     }
   </script>
 </body>
